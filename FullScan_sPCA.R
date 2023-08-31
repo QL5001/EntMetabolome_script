@@ -11,7 +11,7 @@ X_mean = apply(X, 2, mean)
 X_center = scale(X, center = X_mean, scale = FALSE)
 Y = ent4$Group   #UTI89 and the mutants
 
-spca.ent = pca(X_center, ncomp = 10, center = FALSE, scale = FALSE)
+spca.ent = spca(X_center, ncomp = 10, center = FALSE, scale = FALSE)
 
 ev = spca.ent$explained_variance   #explained_variance
 write.csv(ev, "ent4_SPCA_ExplainedVariance.csv")
