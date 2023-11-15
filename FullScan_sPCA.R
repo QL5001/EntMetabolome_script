@@ -28,7 +28,7 @@ loa_PC2 = data.frame(peak = peak_name, PC2loa = loa[, 2])   #create a dataframe 
 
 par(mar=c(5,4,4,2)+0.1)
 png(filename = "ent4_sPCA_ScorePlot.png", width = 600, height = 400)  #sPCA score plot
-plotIndiv(spca.ent, comp = c(1,2), group = ent20190826_89$Group, pch = c(15, 16, 17, 18), cex = 4, col = rainbow(4), ellipse = FALSE, ind.names = FALSE, legend = TRUE, size.legend = 15, size.xlabel = 18, size.ylabel = 18, size.axis = 15, title = "ent4_SPCA_ScorePlot")
+plotIndiv(spca.ent, comp = c(1,2), group = ent4$Group, pch = c(15, 16, 17, 18), cex = 4, col = rainbow(4), ellipse = FALSE, ind.names = FALSE, legend = TRUE, size.legend = 15, size.xlabel = 18, size.ylabel = 18, size.axis = 15, title = "ent4_SPCA_ScorePlot")
 
 graphics.off()
 
